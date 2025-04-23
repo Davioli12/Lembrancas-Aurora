@@ -27,8 +27,8 @@ python app.py
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-projeto.git
-cd nome-do-projeto
+git clone https://github.com/Davioli12/Lembrancas-Aurora.git
+cd Lembrancas-Aurora
 ```
 
 ## ▶️ Execute

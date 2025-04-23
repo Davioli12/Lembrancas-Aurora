@@ -48,4 +48,4 @@ def lembrancas():
     return render_template('lembrancas.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=734571, debug=True)
