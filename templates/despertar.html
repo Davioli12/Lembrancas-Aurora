@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragmento 3 - Aurora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <p>Você chegou ao fim da jornada. Aurora está prestes a despertar.</p>
+    <h2>🌅 Despertar</h2>
+    
+    <p id="lembranca"></p>
+
+    <p>O que ela deve fazer?</p>
+    <div class="decisao">
+        <a href="/lembrancas" class="btn" onclick="escolher('lembrar')">Lembrar tudo</a>
+        <a href="/" class="btn" onclick="escolher('esquecer')">Esquecer e recomeçar</a>
+    </div>
+
+    <div id="final" class="memoria-texto"></div>
+</body>
+</html>

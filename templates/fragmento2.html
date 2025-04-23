@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragmento 2 – Espelhos da Infância</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/fragmento2.js') }}"></script>
+</head>
+<body class="espelhos">
+    <div class="container">
+        <h2>🪞 Fragmento 2: Espelhos da Infância</h2>
+        <p>Escolha apenas um espelho... e descubra o que ele guarda.</p>
+
+        <div class="espelhos-container">
+            <img src="{{ url_for('static', filename='img/espelho1.png') }}" class="espelho" data-memoria="A infância era cheia de música e risadas.">
+            <img src="{{ url_for('static', filename='img/espelho2.png') }}" class="espelho" data-memoria="O silêncio era constante... mas cheio de carinho.">
+            <img src="{{ url_for('static', filename='img/espelho3.png') }}" class="espelho" data-memoria="Havia dor, mas também descobertas que me moldaram.">
+        </div>
+
+        <div id="memoria-escolhida" class="memoria-texto"></div>
+        <a id="proximo2" href="/fragmento3" class="btn escondido">Continuar</a>
+    </div>
+</body>
+</html>

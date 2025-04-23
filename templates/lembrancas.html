@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembranças de Aurora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/fragmento1.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <p>As Lembranças de Aurora</p>
+        <h2>Lembranças de Aurora</h2>
+        <div class="memorias">
+            <img src="{{ url_for('static', filename='img/house.png') }}" class="memoria" data-text="A casa que Aurora morava em sua infancia...">
+            <img src="{{ url_for('static', filename='img/rosa.png') }}" class="memoria" data-text="Os brinquedos..., os momentos..., as brincadeiras..., são unicos!">
+            <img src="{{ url_for('static', filename='img/rosa.png') }}" class="memoria" data-text="123...">
+        </div>
+
+        <div id="texto-memoria" class="memoria-texto"></div>
+
+        <a id="proximo" href="/aslembranças">Avançar</a>
+    </div>
+</body>
+</html>

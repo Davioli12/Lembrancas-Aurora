@@ -1,0 +1,13 @@
+# Ignora pastas
+__pycache__/
+.vscode/
+venv/
+.env/
+.test/
+
+# Ignora arquivos temporários
+*.log
+*.tmp
+
+# Ignora arquivos específicos
+gerar.py

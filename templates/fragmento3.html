@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragmento 3 - Aurora</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fragmento 3 - A Voz Perdida</h1>
+        <p>Enquanto caminha pela estação vazia, Aurora ouve uma gravação antiga... uma voz familiar, mas distante.</p>
+
+        <!-- Áudio -->
+        <audio id="audio-fragmento" autoplay>
+            <source src="{{ url_for('static', filename='audio/voz_aurora.mp3') }}" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+
+        <!-- Botão oculto -->
+        <a id="proximoBtn" class="btn" href="{{ url_for('fragmento4') }}" style="display: none;">Continuar</a>
+    </div>
+
+    <script>
+        // Pega o áudio e o botão
+        const audio = document.getElementById("audio-fragmento");
+        const botao = document.getElementById("proximoBtn");
+
+        // Quando o áudio terminar, mostra o botão
+        audio.onended = () => {
+            botao.style.display = "inline-block";
+        };
+    </script>
+</body>
+</html>
