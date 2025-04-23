@@ -29,6 +29,7 @@ Clone o repositório:
 ```bash
 git clone https://github.com/Davioli12/Lembrancas-Aurora.git
 cd Lembrancas-Aurora
+pip install -r requirements.txt
 ```
 
 ## ▶️ Execute
