@@ -67,9 +67,11 @@ nav a {
     font-weight: bold;
 }
 
-/* Imagens com animação */
+/* Imagens com tamanho fixo e sem corte */
 img {
-    max-width: 100%;
+    width: 300px; /* Defina a largura fixa desejada */
+    height: 200px; /* Defina a altura fixa desejada */
+    object-fit: contain; /* Garantir que a imagem se ajuste sem cortar */
     border-radius: 10px;
     margin: 20px 0;
     transition: transform 0.3s ease;

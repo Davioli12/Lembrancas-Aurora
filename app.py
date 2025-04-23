@@ -45,7 +45,14 @@ def despertar():
 def lembrancas():
     if not session.get('despertar'):
         return redirect(url_for('despertar'))
+    session['lembrancas'] = True
     return render_template('lembrancas.html')
+
+@app.route('/fim')
+def fim():
+    if not session.get('lembrancas'):
+        return redirect(url_for('lembrancas'))
+    return render_template('fim.html')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=734571, debug=True)
