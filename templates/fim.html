@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fim de História - Créditos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -73,8 +74,11 @@
                 <li><strong>Desenvolvedor Web:</strong> Davi de Oliveira Santos</li>
                 <li><strong>Design Gráfico:</strong> Chat GPT (IA)</li>
             </ul>
+            <a href="/">recomeçar</a>
+            <br>
+            <p>Veja o projeto em:</p>
+            <img src="{{ url_for('static', filename='img/qrcode.png') }}">
         </div>
-        <a href="/">recomeçar</a>
     </div>
 
     <footer>
