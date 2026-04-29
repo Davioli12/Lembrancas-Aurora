@@ -1,0 +1,22 @@
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+p {
+    font-size: 1.5em;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+}
+
+.memorias {
+    margin: 20px 0;
+}
+
+.texto-memoria {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+

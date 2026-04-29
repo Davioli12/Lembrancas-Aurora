@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Fragmento 3 - Aurora</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/frag3.css') }}">
+    <script defersrc="{{ url_for('static', filename='js/frag3.js') }}"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Fragmento 3 - A Voz Perdida</h1>
@@ -16,19 +20,15 @@
             Seu navegador não suporta áudio.
         </audio>
 
+        <div class="controles">
+            <button id="playBtn">▶ Play</button>
+            <button id="pauseBtn">⏸ Pause</button>
+            <button id="restartBtn">🔄 Reiniciar</button>
+        </div>
+
         <!-- Botão oculto -->
         <a id="proximoBtn" class="btn" href="{{ url_for('fragmento4') }}" style="display: none;">Continuar</a>
     </div>
-
-    <script>
-        // Pega o áudio e o botão
-        const audio = document.getElementById("audio-fragmento");
-        const botao = document.getElementById("proximoBtn");
-
-        // Quando o áudio terminar, mostra o botão
-        audio.onended = () => {
-            botao.style.display = "inline-block";
-        };
-    </script>
 </body>
+
 </html>
