@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /*
-    Captura o áudio
+    Captura o elemento de áudio
     */
     const audio = document.getElementById("audio-fragmento");
 
@@ -13,40 +13,47 @@ document.addEventListener("DOMContentLoaded", () => {
     const restartBtn = document.getElementById("restartBtn");
 
     /*
-    Botão de continuar
+    Captura o botão continuar
     */
     const proximoBtn = document.getElementById("proximoBtn");
 
     /*
-    Play
+    Botão Play
     */
     playBtn.addEventListener("click", () => {
         audio.play();
     });
 
     /*
-    Pause
+    Botão Pause
     */
     pauseBtn.addEventListener("click", () => {
         audio.pause();
     });
 
     /*
-    Reiniciar
+    Botão Reiniciar
     */
     restartBtn.addEventListener("click", () => {
+
+        /*
+        Volta o áudio para o início
+        */
         audio.currentTime = 0;
+
+        /*
+        Toca novamente
+        */
         audio.play();
 
         /*
-        Oculta novamente o botão
-        caso o áudio reinicie
+        Esconde o botão novamente
         */
         proximoBtn.style.display = "none";
     });
 
     /*
-    Quando o áudio terminar
+    Evento executado quando o áudio termina
     */
     audio.addEventListener("ended", () => {
 
@@ -56,9 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
         proximoBtn.style.display = "inline-block";
 
         /*
-        Adiciona animação opcional
+        Adiciona classe de animação
         */
-        proximoBtn.style.display = 'flex';
+        proximoBtn.classList.add("mostrar");
     });
 
 });

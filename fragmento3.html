@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Fragmento 3 - Aurora</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/frag3.css') }}">
-    <script defersrc="{{ url_for('static', filename='js/frag3.js') }}"></script>
+    <link rel="stylesheet" href="./static/css/base.css">
+    <link rel="stylesheet" href="./static/css/frag3.css">
+    <script defer src="./static/js/frag3.js"></script>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 
         <!-- Áudio -->
         <audio id="audio-fragmento" autoplay>
-            <source src="{{ url_for('static', filename='audio/voz_aurora.mp3') }}" type="audio/mpeg">
+            <source src="./static/audio/voz_aurora.mp3" type="audio/mpeg">
             Seu navegador não suporta áudio.
         </audio>
 
@@ -27,7 +27,7 @@
         </div>
 
         <!-- Botão oculto -->
-        <a id="proximoBtn" class="btn" href="{{ url_for('fragmento4') }}" style="display: none;">Continuar</a>
+        <a id="proximoBtn" class="btn" href="./fragmento4.html" style="display: none;">Continuar</a>
     </div>
 </body>
 
