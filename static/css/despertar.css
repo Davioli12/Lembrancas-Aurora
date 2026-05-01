@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff6600;
+    margin-bottom: 10px;
+}

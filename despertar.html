@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Fragmento 3 - Aurora</title>
     <link rel="stylesheet" href="./static/css/base.css">
     <link rel="stylesheet" href="./static/css/despertar.css">
 </head>
+
 <body>
-    <p>Você chegou ao fim da jornada. Aurora está prestes a despertar.</p>
-    <h2>🌅 Despertar</h2>
-    
-    <p id="lembranca"></p>
+    <div class="container">
+        <p>Você chegou ao fim da jornada. Aurora está prestes a despertar.</p>
+        <h2>🌅 Despertar</h2>
 
-    <p>O que ela deve fazer?</p>
-    <div class="decisao">
-        <a href="./lembrancas.html" class="btn" onclick="escolher('lembrar')">Lembrar tudo</a>
-        <a href="./index.html" class="btn" onclick="escolher('esquecer')">Esquecer e recomeçar</a>
+        <p id="lembranca"></p>
+
+        <p>O que ela deve fazer?</p>
+        <div class="decisao">
+            <a href="./lembrancas.html" class="btn" onclick="escolher('lembrar')">Lembrar tudo</a>
+            <a href="./index.html" class="btn" onclick="escolher('esquecer')">Esquecer e recomeçar</a>
+        </div>
+
+        <div id="final" class="memoria-texto"></div>
     </div>
-
-    <div id="final" class="memoria-texto"></div>
 </body>
+
 </html>

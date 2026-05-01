@@ -16,6 +16,8 @@ body {
 
 .container {
     display: flex;
+    min-width: 800px;
+    max-width: 900px;
     align-content: center;
     flex-direction: column;
     align-items: center;

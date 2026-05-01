@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const playBtn = document.getElementById("playBtn");
     const pauseBtn = document.getElementById("pauseBtn");
     const restartBtn = document.getElementById("restartBtn");
+    const pularBtn = document.getElementById("pularBtn");
 
     /*
     Captura o botão continuar
@@ -50,6 +51,13 @@ document.addEventListener("DOMContentLoaded", () => {
         Esconde o botão novamente
         */
         proximoBtn.style.display = "none";
+    });
+
+    /*
+    Botão Pular
+    */
+    pularBtn.addEventListener("click", () => {
+        audio.currentTime = audio.duration;
     });
 
     /*
